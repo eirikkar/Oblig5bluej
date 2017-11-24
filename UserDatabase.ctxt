@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=UserDatabase
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ UserDatabase\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=UserDatabase()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ UserDatabase\r\n
+comment2.params=
+comment2.target=UserDatabase\ getInstance()
+comment3.params=student
+comment3.target=void\ addStudent(Student)
+comment4.params=
+comment4.target=void\ listStudents()
+comment5.params=
+comment5.target=boolean\ saveDatabase()
+comment6.params=
+comment6.target=boolean\ loadDatabase()
+numComments=7

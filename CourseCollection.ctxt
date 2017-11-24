@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=CourseCollection
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ CourseCollection\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=CourseCollection()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CourseCollection\r\n
+comment2.params=coursesEncoded
+comment2.target=CourseCollection(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ encode()
+comment4.params=courseCode
+comment4.target=void\ addCourse(java.lang.String)
+comment5.params=
+comment5.target=void\ printTest()
+numComments=6
