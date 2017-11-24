@@ -1,19 +1,22 @@
 #BlueJ class context
 comment0.target=Student
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Student\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ student\ class\ is\ responsible\ for\ the\ creation\ of\ a\ student\ with\ name\ and\ courses.\r\n\r\n\ @author\ (Eirik\ Karlsen)\r\n\ @version\ (1.0)\r\n
 comment1.params=firstName\ surname
 comment1.target=Student(java.lang.String,\ java.lang.String)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Student\r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Student\r\n\ Creates\ a\ student\ object\r\n
 comment2.params=encodedStudent
 comment2.target=Student(java.lang.String)
+comment2.text=\r\n\ Student\ Constructor\r\n\r\n\ @param\ encodedStudent\ Takes\ the\ encodedStudent\ parameter\ and\ creates\ a\r\n\ student\ object\ from\ the\ database.\r\n
 comment3.params=
 comment3.target=java.lang.String\ encode()
+comment3.text=\r\n\ Method\ encode\r\n\ \r\n\ @return\ returns\ the\ student\ name\ and\ courses\ encoded\r\n
 comment4.params=
 comment4.target=Name\ getName()
-comment4.text=\r\n\ Method\ getName\r\n\r\n\ @return\ The\ return\ value\r\n
+comment4.text=\r\n\ Method\ getName\r\n\r\n\ @return\ Returns\ student\ name\r\n
 comment5.params=
 comment5.target=CourseCollection\ getCourses()
-comment5.text=\r\n\ Method\ getCourses\r\n\r\n\ @return\ The\ return\ value\r\n
+comment5.text=\r\n\ Method\ getCourses\r\n\r\n\ @return\ returns\ the\ students\ courses\r\n
 comment6.params=course
 comment6.target=void\ addCourse(java.lang.String)
+comment6.text=\r\n\ Method\ addCourse\r\n\ Adds\ courses\ to\ the\ student\r\n\ @param\ course\r\n
 numComments=7

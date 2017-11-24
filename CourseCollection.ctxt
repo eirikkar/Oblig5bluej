@@ -1,15 +1,19 @@
 #BlueJ class context
 comment0.target=CourseCollection
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ CourseCollection\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Class\ CoruseCollection\ keeps\ all\ the\ information\ needed\ to\ create\ new\ courses.\r\n\r\n\ @author\ (Eirik\ Karlsen)\r\n\ @version\ (1.0)\r\n
 comment1.params=
 comment1.target=CourseCollection()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CourseCollection\r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ CourseCollection\r\n\ Constructs\ a\ new\ CourseCollection\ object\ with\ a\ courses\ ArrayList\r\n
 comment2.params=coursesEncoded
 comment2.target=CourseCollection(java.lang.String)
+comment2.text=\r\n\ CourseCollection\ Constructor\r\n\r\n\ @param\ coursesEncoded\r\n
 comment3.params=
 comment3.target=java.lang.String\ encode()
+comment3.text=\r\n\ Method\ encode\r\n\ Encodes\ courses\ with\ ';'.\r\n\ @return\ returns\ courses\ encoded.\r\n
 comment4.params=courseCode
 comment4.target=void\ addCourse(java.lang.String)
+comment4.text=\r\n\ Method\ addCourse\r\n\ Takes\ the\ param\ and\ checks\ if\ the\ parameter\ is\ valid.\ If\ it\ is\ valid\ it\ adds\ it\ to\ the\ courses\ ArrayList.\r\n\ @param\ courseCode\r\n
 comment5.params=
 comment5.target=void\ printTest()
+comment5.text=\r\n\ Method\ printTest\r\n\ Prints\ courses.\r\n
 numComments=6

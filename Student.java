@@ -1,14 +1,9 @@
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Arrays;
 
 /**
- * Write a description of class Student here.
+ * The student class is responsible for the creation of a student with name and courses.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Eirik Karlsen)
+ * @version (1.0)
  */
 public class Student
 {
@@ -17,12 +12,19 @@ public class Student
     
     /**
      * Constructor for objects of class Student
-     */
+     * Creates a student object
+     */ 
     public Student(String firstName, String surname) {
        name = new Name(firstName, surname);
        courses = new CourseCollection();
     }
     
+    /**
+     * Student Constructor
+     *
+     * @param encodedStudent Takes the encodedStudent parameter and creates a
+     * student object from the database.
+     */
     public Student(String encodedStudent) {
 
         //Splits encodedStudent
@@ -40,13 +42,16 @@ public class Student
         name = new Name(firstName, surname);
         courses = new CourseCollection();
 
-        //Splits courses, removes ';' from course list and adds courses to the CourseCollection object
+        //Splits courses and adds them to the CourseCollection object
         String[] course = parts [1].split(";");
-      //  List<String> list = new ArrayList<String>(Arrays.asList(course));
-      //  list.removeAll(Collections.singleton(";"));
         for (String c: course) addCourse(c);
     }
     
+    /**
+     * Method encode
+     * 
+     * @return returns the student name and courses encoded
+     */
     public String encode() {
         return name.encode() + "\t" + courses.encode();
     }
@@ -54,7 +59,7 @@ public class Student
     /**
      * Method getName
      *
-     * @return The return value
+     * @return Returns student name
      */
     public Name getName() {
         return name;
@@ -63,12 +68,17 @@ public class Student
     /**
      * Method getCourses
      *
-     * @return The return value
+     * @return returns the students courses
      */
     public CourseCollection getCourses() {
         return courses;
     }
     
+    /**
+     * Method addCourse
+     * Adds courses to the student
+     * @param course
+     */
     public void addCourse (String course) {
         courses.addCourse(course);
     }

@@ -1,17 +1,22 @@
 #BlueJ class context
 comment0.target=UserDatabase
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ UserDatabase\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ UserDatabase\ interacts\ with\ the\ database,\ saves\ or\ loads\ from\ it\ and\ creates\ a\ students\ arraylist.\r\n\r\n\ @author\ (Eirik\ Karlsen)\r\n\ @version\ (1.0)\r\n
 comment1.params=
 comment1.target=UserDatabase()
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ UserDatabase\r\n
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ UserDatabase\r\n\ Constructs\ a\ new\ UserDatabase\ object\ and\ makes\ a\ students\ AL.\r\n
 comment2.params=
 comment2.target=UserDatabase\ getInstance()
+comment2.text=\r\n\ Method\ getInstance\r\n\ Creates\ a\ new\ UserDatabase\ object\ or\ refers\ to\ an\ existing\ one.\r\n\ @return\ Returns\ a\ instance\ for\ UserDatabase\r\n
 comment3.params=student
 comment3.target=void\ addStudent(Student)
+comment3.text=\r\n\ Method\ addStudent\r\n\ Adds\ a\ student\ to\ the\ students\ ArrayList.\r\n\ @param\ student\r\n
 comment4.params=
 comment4.target=void\ listStudents()
+comment4.text=\r\n\ Method\ listStudents\r\n\ Lists\ students\ in\ the\ ArrayList\ students.\r\n
 comment5.params=
 comment5.target=boolean\ saveDatabase()
+comment5.text=\r\n\ Method\ saveDatabase\r\n\ Adds\ the\ students\ ArrayList\ to\ the\ database\ filename\ "DB.tsv"\ and\r\n\ encodes\ the\ student.\r\n\ @return\ returns\ true\ if\ the\ database\ is\ updated\r\n
 comment6.params=
 comment6.target=boolean\ loadDatabase()
+comment6.text=\r\n\ Method\ loadDatabase\r\n\ Loads\ the\ database\ from\ 'DB.tsv',\ creates\ a\ new\ student\ object.\r\n\ @return\ Returns\ true\ if\ the\ database\ is\ correctly\ encoded.\r\n
 numComments=7

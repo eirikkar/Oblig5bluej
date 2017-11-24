@@ -1,19 +1,19 @@
 #BlueJ class context
 comment0.target=Name
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ Name\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ The\ Name\ class\ creates\ and\ encodes\ names.\r\n\r\n\ @author\ (Eirik\ Karlsen)\r\n\ @version\ (1.0)\r\n
 comment1.params=firstName\ surname
 comment1.target=Name(java.lang.String,\ java.lang.String)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Name\r\n
+comment1.text=\r\n\ Name\ Constructor\r\n\r\n\ @param\ firstName\ A\ parameter\r\n\ @param\ surname\ A\ parameter\r\n
 comment2.params=encodedIdentity
 comment2.target=Name(java.lang.String)
-comment2.text=\r\n\ Name\ Constructor\r\n\r\n\ @param\ encodedIdentity\ A\ parameter\r\n
+comment2.text=\r\n\ Name\ Constructor\r\n\r\n\ @param\ encodedIdentity\ Takes\ encodedIdentity\ as\ a\ parameter.\r\n
 comment3.params=
 comment3.target=java.lang.String\ getFirstName()
-comment3.text=\r\n\ Method\ getFirstName\r\n\r\n\ @return\ The\ return\ value\r\n
+comment3.text=\r\n\ Method\ getFirstName\r\n\r\n\ @return\ Returns\ firstName\r\n
 comment4.params=
 comment4.target=java.lang.String\ getSurname()
-comment4.text=\r\n\ Method\ getSurname\r\n\r\n\ @return\ The\ return\ value\r\n
+comment4.text=\r\n\ Method\ getSurname\r\n\r\n\ @return\ Returns\ surname\r\n
 comment5.params=
 comment5.target=java.lang.String\ encode()
-comment5.text=\r\n\ Method\ encode\r\n\r\n\ @return\ The\ return\ value\r\n
+comment5.text=\r\n\ Method\ encode\r\n\r\n\ @return\ returns\ firstName\ and\ surname\ encoded\r\n
 numComments=6

@@ -2,4 +2,5 @@
 comment0.target=Main
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ Method\ main\r\n\r\n\ Checks\ if\ the\ program\ works.\r\n
 numComments=2

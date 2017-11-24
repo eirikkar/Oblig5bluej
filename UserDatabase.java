@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.io.IOException;
 import java.util.stream.Collectors;
 /**
- * Write a description of class UserDatabase here.
+ * The UserDatabase interacts with the database, saves or loads from it and creates a students arraylist.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Eirik Karlsen)
+ * @version (1.0)
  */
 public class UserDatabase
 {
@@ -17,11 +17,17 @@ public class UserDatabase
     
     /**
      * Constructor for objects of class UserDatabase
+     * Constructs a new UserDatabase object and makes a students AL.
      */
-    public UserDatabase() {
+    private UserDatabase() {
         students = new ArrayList<>();
     }
     
+    /**
+     * Method getInstance
+     * Creates a new UserDatabase object or refers to an existing one.
+     * @return Returns a instance for UserDatabase
+     */
     public static UserDatabase getInstance() {
         if(instance == null){
             instance = new UserDatabase();
@@ -29,16 +35,31 @@ public class UserDatabase
         return instance;
     }
     
+    /**
+     * Method addStudent
+     * Adds a student to the students ArrayList.
+     * @param student
+     */
     public void addStudent(Student student) {
         students.add(student);
     }
     
+    /**
+     * Method listStudents
+     * Lists students in the ArrayList students.
+     */
     public void listStudents() {
         for (Student student : students) {
-            System.out.println(student);
+            System.out.println(student.getName());
         }
     }
     
+    /**
+     * Method saveDatabase
+     * Adds the students ArrayList to the database filename "DB.tsv" and
+     * encodes the student.
+     * @return returns true if the database is updated
+     */
     public boolean saveDatabase() {
         try {
             Files.write(Paths.get(DATABASE_FILENAME),
@@ -52,6 +73,11 @@ public class UserDatabase
         }
     }
     
+    /**
+     * Method loadDatabase
+     * Loads the database from 'DB.tsv', creates a new student object.
+     * @return Returns true if the database is correctly encoded.
+     */
     public boolean loadDatabase() {
         try {
             students = Files.lines(Paths.get(DATABASE_FILENAME))

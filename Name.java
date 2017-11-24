@@ -1,16 +1,20 @@
 
 /**
- * Write a description of class Name here.
+ * The Name class creates and encodes names.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Eirik Karlsen)
+ * @version (1.0)
  */
 public class Name
 {
     private String firstName;
     private String surname;
+    
     /**
-     * Constructor for objects of class Name
+     * Name Constructor
+     *
+     * @param firstName A parameter
+     * @param surname A parameter
      */
     public Name(String firstName, String surname)
     {
@@ -20,7 +24,7 @@ public class Name
     /**
      * Name Constructor
      *
-     * @param encodedIdentity A parameter
+     * @param encodedIdentity Takes encodedIdentity as a parameter.
      */
     public Name(String encodedIdentity) {
         encodedIdentity = encode();
@@ -29,7 +33,7 @@ public class Name
     /**
      * Method getFirstName
      *
-     * @return The return value
+     * @return Returns firstName
      */
     public String getFirstName () {
         return firstName;
@@ -38,7 +42,7 @@ public class Name
     /**
      * Method getSurname
      *
-     * @return The return value
+     * @return Returns surname
      */
     public String getSurname () {
         return surname;
@@ -47,7 +51,7 @@ public class Name
     /**
      * Method encode
      *
-     * @return The return value
+     * @return returns firstName and surname encoded
      */
     public String encode () {
         return firstName + ";" + surname;
